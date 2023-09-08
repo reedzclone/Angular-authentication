@@ -1,0 +1,143 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card border border-4 rounded-4 shadow-lg">
+        <div class="text-center fs-3">
+          <h1>Sign Up</h1>
+        </div>
+        <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="userName" class="mt-4 fs-5">User Name</label>
+            <input
+              ngModel
+              id="userName"
+              type="text"
+              class="form-control p-2"
+              placeholder="User Name..."
+              formControlName="userName"
+            />
+            <div
+              *ngIf="
+                registrationFormControl.userName.touched &&
+                registrationFormControl.userName.invalid
+              "
+            >
+              <span
+                class="alert text-danger"
+                *ngIf="registrationFormControl.userName.errors?.required"
+                >*UserName is required</span
+              >
+              <span
+                class="alert text-danger"
+                *ngIf="registrationFormControl.userName.errors?.minlength"
+                >*UserName must me atleast 5 letters long</span
+              >
+            </div>
+          </div>
+
+          <div class="form-group" class="mt-4">
+            <label for="email" class="fs-5">Email</label>
+            <input
+              name="email"
+              id="email"
+              type="text"
+              class="form-control p-2"
+              placeholder="Email..."
+              formControlName="email"
+            />
+            <div
+              *ngIf="
+                registrationFormControl.email.touched &&
+                registrationFormControl.email.invalid
+              "
+            >
+              <span
+                class="alert text-danger"
+                *ngIf="registrationFormControl.email.errors?.required"
+                >*Email Required</span
+              >
+              <span
+                class="alert text-danger"
+                *ngIf="registrationFormControl.email.errors?.pattern"
+                >Invalid Email</span
+              >
+            </div>
+          </div>
+          <div class="form-group" class="mt-4">
+            <label for="password" class="fs-5">Password</label>
+            <input
+              name="password"
+              id="password"
+              type="password"
+              class="form-control p-2"
+              placeholder="Password..."
+              formControlName="password"
+              (ngModelChange)="onKeyPress($event)"
+            />
+
+            <div class="mt-4 mb-4 container-error" *ngIf="showError">
+              <div class="mb-2">
+                <span
+                  ><i
+                    *ngIf="upperLetter"
+                    class="bi bi-check-lg text-success fs-4"
+                  ></i
+                  ><i
+                    *ngIf="!upperLetter"
+                    class="bi bi-x-lg text-danger fs-4"
+                  ></i></span
+                ><span class="fw-bold">should contain capital letter</span>
+              </div>
+              <div class="mb-2">
+                <span
+                  ><i
+                    *ngIf="specialChar"
+                    class="bi bi-check-lg text-success fs-4"
+                  ></i
+                  ><i
+                    *ngIf="!specialChar"
+                    class="bi bi-x-lg text-danger fs-4"
+                  ></i></span
+                ><span class="fw-bold">should contain special chareacters</span>
+              </div>
+              <div class="mb-2">
+                <span
+                  ><i
+                    *ngIf="minimum"
+                    class="bi bi-check-lg text-success fs-4"
+                  ></i
+                  ><i
+                    *ngIf="!minimum"
+                    class="bi bi-x-lg text-danger fs-4"
+                  ></i></span
+                ><span class="fw-bold">should contain up to 8 characters</span>
+              </div>
+              <div class="mb-2">
+                <span
+                  ><i
+                    *ngIf="hasANumber"
+                    class="bi bi-check-lg text-success fs-4"
+                  ></i
+                  ><i
+                    *ngIf="!hasANumber"
+                    class="bi bi-x-lg text-danger fs-4"
+                  ></i></span
+                ><span class="fw-bold">should contain a number</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <button type="submit" class="btn btn-primary mb-2">signup</button>
+            <br />
+            <span
+              ><a routerLink="/login"
+                >Already have an account Login here</a
+              ></span
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

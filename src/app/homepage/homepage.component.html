@@ -1,0 +1,57 @@
+<div class="container text-center">
+  <app-search (searchTextChanged)="onSearchTextEntered($event)"></app-search>
+  <div class="profile row">
+    <div
+      class="col profile mt-5"
+      *ngFor="
+        let element of users
+          | paginate
+            : {
+                itemsPerPage: itemsPerPage,
+                currentPage: p,
+                totalItems: totalProfiles
+              }
+      "
+    >
+      <div
+        class="card"
+        style="width: 20rem"
+        [routerLink]="['/home/profile', element?.id]"
+        *ngIf="
+          searchText === '' ||
+          element.email.toLowerCase().split('@')[0].includes(searchText)
+        "
+      >
+        <div class="card-body border border-4 rounded-4 shadow-lg p-4">
+          <h2 class="card-title">User Profile</h2>
+          <img src="https://picsum.photos/150" alt="profile pix" />
+          <h4 class="card-subtitle mt-3 text-body-secondary">
+            Name: {{ element?.userName }}
+          </h4>
+          <h4 class="card-text mb-3">Email: {{ element?.email }}</h4>
+          <h4 class="card-text mt-3 fw-bold">
+            Created At: {{ element?.createdAt | date : "short" }}
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container page mt-6"></div>
+</div>
+
+<!-- pagination -->
+<pagination-controls
+  *ngIf="users.length > 0"
+  (responsive)="true"
+  (pageChange)="p = $event"
+  class="d-flex justify-content-center mb-3"
+>
+</pagination-controls>
+
+<mat-paginator
+  #paginator
+  [length]="100"
+  [pageSizeOptions]="[3, 5, 10]"
+  aria-label="select page"
+>
+</mat-paginator>

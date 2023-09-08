@@ -1,0 +1,154 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "userName": "jennifer marian",
+      "email": "marian@gmail.com",
+      "password": "oloyereedz"
+    },
+    {
+      "id": 2,
+      "userName": "mark cubin",
+      "email": "mark@gmail.com",
+      "password": "oloyereedz"
+    },
+    {
+      "userName": "mary carter",
+      "email": "carter@gmail.com",
+      "password": "Carter@1",
+      "id": 3
+    },
+    {
+      "userName": "cambell lousy",
+      "email": "lousy@gmail.com",
+      "password": "Lousy1@we",
+      "id": 4
+    },
+    {
+      "userName": "kemi ola",
+      "email": "ola@gmail.com",
+      "password": "Kemi@1mi",
+      "id": 5
+    },
+    {
+      "userName": "larry homes",
+      "email": "larry@gmail.com",
+      "password": "\"wHeuhryebdtj2",
+      "id": 6
+    },
+    {
+      "userName": "larry homes",
+      "email": "home@gmail.com",
+      "password": "Homes@larry1",
+      "id": 7
+    },
+    {
+      "userName": "becky loius",
+      "email": "becky@gmail",
+      "password": "Becky@1l",
+      "id": 8
+    },
+    {
+      "userName": "becky loius",
+      "email": "becky@gmail",
+      "password": "Becky@1l",
+      "id": 8
+    },
+    {
+      "userName": "larry homes",
+      "email": "oloyereedzu@gmail.com",
+      "password": "uP)90000",
+      "id": 9
+    },
+    {
+      "userName": "Mary Mike",
+      "email": "mary@gmail.com",
+      "password": "Mary@2lo",
+      "id": 10
+    },
+    {
+      "userName": "Kemi olumide",
+      "email": "olumide@gmail.com",
+      "password": "Q2222d3#",
+      "id": 11
+    },
+    {
+      "userName": "Olumide lekan",
+      "email": "lekan@gmail.com",
+      "password": "Lekan@23",
+      "id": 12
+    },
+    {
+      "userName": "mide olayinka",
+      "email": "mide@gmail.com",
+      "password": "Babs!1wr",
+      "id": 13
+    },
+    {
+      "userName": "shola kehinde",
+      "email": "shola@gmail.com",
+      "password": "Shola@23",
+      "id": 14
+    },
+    {
+      "userName": "Justin barry",
+      "email": "barry@gmail.com",
+      "password": "Barry@g1",
+      "id": 15
+    },
+    {
+      "userName": "cappy sloppy",
+      "email": "cappy@gmail.com",
+      "password": "Capp@lopp3",
+      "id": 16
+    },
+    {
+      "userName": "jude lamp",
+      "email": "jude@gmail.com",
+      "password": "Jude@las2",
+      "id": 17
+    },
+    {
+      "userName": "larry homes",
+      "email": "homez@gmail.com",
+      "password": "uP)90000",
+      "id": 18
+    },
+    {
+      "userName": "larry homes",
+      "email": "babay@gmail.com",
+      "password": "uP)90000",
+      "id": 19
+    },
+    {
+      "userName": "mary carter",
+      "email": "carter@gmail.com",
+      "password": "Carter@1",
+      "id": 20
+    },
+    {
+      "email": "james@gmail.com",
+      "password": "$2a$10$Bzny54r9Ey4/ytOWcuD/x.l6zwWM1YUUJlt6Ri8V/1d1pHjXG54Pi",
+      "userName": "james femi",
+      "id": 21
+    },
+    {
+      "email": "mike@gmail.com",
+      "password": "$2a$10$M9mJge/etgXyInh.ihxQee2pbYhO72EbSrq9MxXZam4Gg52wm.dMq",
+      "userName": "mike press",
+      "id": 22
+    },
+    {
+      "email": "ademolasam@gmail.com",
+      "password": "$2a$10$IT9/4ajDX7G.yZMK16FlZO/zwMkjHW7j5rdJFFiXHBwVkmBjhr4Ve",
+      "userName": "Ademola Sam",
+      "id": 23
+    },
+    {
+      "email": "lara@gmail.com",
+      "password": "$2a$10$gnqWdZyWBuC7J44WAsDD5.JhFeCckbkaRRqzJpyWkSdSGtSBT7pRK",
+      "userName": "Lara Croft",
+      "id": 24
+    }
+  ]
+}
